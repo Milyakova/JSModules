@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Календарь и таймер</title>
+    <script src="./src/index.js" type="module"></script>
+</head>
+<body>
+    <div class="screen" >
+        <h1>Калькулятор дат и таймер</h1>
+        <ul class="device-list" id="device-list">
+            <li>
+              <button class="device-btn" data-num="0" >
+                Калькулятор дат
+              </button>
+            </li>
+            <li>
+              <button class="device-btn" data-num="1">
+                Таймер
+              </button>
+            </li>
+
+        </ul>
+    </div>
+
+    <div class="screen" >
+        <h1>Калькулятор дат</h1>
+        <form id="form-date">
+            <label for="">
+                <b>Первая дата:</b>
+                <input type="date" name="date1" id="date1">
+                
+            </label>
+            <label for="">
+                <b>Вторая дата:</b>
+                <input type="date" name="date2" id="date2">
+                
+            </label>
+            <button type="submit">Рассчитать промежуток</button>
+        </form>
+        <p class="message"></p>
+        <a href="#" class="restart" id="restart">Назад</a>
+    </div>
+
+    <div class="screen" >
+        <h1>Таймер</h1>
+        <form id="form-timer">
+            <label for="">
+                <b>Установите время:</b>
+                <input type="time" name="timeSet" id="timeSet">
+            </label>
+            <div class="start-stop">
+                <button type="submit">Старт</button>
+                <button type="reset">Стоп</button> 
+            </div>
+            
+        </form>
+        <h3>Осталось <span id="time">00:00</span></h3>
+        
+        <a href="#" class="restart" id="restart">Назад</a>
+    </div>
+
+</body>
+</html>
